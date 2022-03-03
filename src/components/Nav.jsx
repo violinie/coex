@@ -5,7 +5,7 @@ export default function Nav() {
     <header>
       <nav className="my-nav hstack p-2">
         <img src="./images/logo.png" alt="" />
-        <ul className="nav d-sm-none d-md-flex">
+        <ul className="nav d-none d-md-flex">
           <li className="nav-item">
             <a href="#" className="nav-link">
               Nabídky práce

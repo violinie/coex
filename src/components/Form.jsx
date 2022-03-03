@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Input = ({ errors, type = "text", name, placeholder, isRequired = false }) => {
   return (
     <>
-      <input type={type} name={name} className="form-control my-4 form-control__input" placeholder={placeholder} required={isRequired} />
+      <input type={type} name={name} className="form-control position-relative my-4 mb-3 form-control__input" placeholder={placeholder} required={isRequired} />
       {errors[name] && <span>{errors[name]}</span>}
     </>
   );
@@ -87,7 +87,7 @@ export default function Form() {
           <input type="checkbox" className="me-3" />
           <span>Chci dostávat newslettery se zajímavými nabídkami</span>
         </div>
-        <select className="my-3 w-100">
+        <select className="my-3 w-100 form-control__input fw-normal">
           <option value="disabled selected">Město, kde hledám práci</option>
           <option value="praha">Praha</option>
           <option value="brno">Brno</option>
