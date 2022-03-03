@@ -12,6 +12,11 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
+h1 {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
 .nav-link {
   color: #373f51;
   font-weight: 700;
@@ -19,4 +24,17 @@ body {
   &:hover {
     color: var(--main-color);
   }
+}
+
+.profile__header {
+  background-image: url(./images/Background.png);
+  min-height: 11.5rem;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.profile__title {
+  display: flex;
+  align-items: center;
 }
