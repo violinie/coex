@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Input = ({ errors, type = "text", name, placeholder, isRequired = false }) => {
   return (
     <>
-      <input type={type} name={name} className="form-control my-4 form-control__input" placeholder={placeholder} required={isRequired} />
+      <input type={type} name={name} className="form-control position-relative my-4 mb-3 form-control__input" placeholder={placeholder} required={isRequired} />
       {errors[name] && <span>{errors[name]}</span>}
     </>
   );
@@ -87,13 +87,22 @@ export default function Form() {
           <input type="checkbox" className="me-3" />
           <span>Chci dostávat newslettery se zajímavými nabídkami</span>
         </div>
-        <select className="my-3 w-100">
-          <option value="disabled selected">Město, kde hledám práci</option>
-          <option value="praha">Praha</option>
-          <option value="brno">Brno</option>
-          <option value="ostrava">Ostrava</option>
-          <option value="liberec">Liberec</option>
-        </select>
+        <div className="d-flex">
+          <select className="my-3 w-100 form-control__input fw-normal me-2">
+            <option value="disabled selected">Město, kde hledám práci</option>
+            <option value="praha">Praha</option>
+            <option value="brno">Brno</option>
+            <option value="ostrava">Ostrava</option>
+            <option value="liberec">Liberec</option>
+          </select>
+          <select className="my-3 w-50 form-control__input fw-normal">
+            <option value="+10km">+ 10 km</option>
+            <option value="+20km">+ 20 km</option>
+            <option value="+50km">+ 50 km</option>
+            <option value="+100km">+ 100 km</option>
+          </select>
+        </div>
+        <div>* Newsletter je možné kdykoliv odhlásit</div>
         <div className="d-flex justify-content-between my-5">
           <button type="reset" className="btn btn--reset py-3 px-5">
             Zrušit

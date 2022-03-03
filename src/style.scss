@@ -6,11 +6,20 @@
 
 :root {
   --main-color: #ff7600;
-  --grey-inputs: #929ba3;
+  --grey: #929ba3;
 }
 
 body {
   font-family: "Fira Sans", sans-serif;
+  color: var(--grey);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0d1321;
 }
 
 h1 {
@@ -20,6 +29,7 @@ h1 {
 
 textarea {
   min-height: 7.5rem;
+  border-radius: 5px;
 }
 
 .container {
@@ -48,14 +58,7 @@ textarea {
 .profile__header {
   background-image: url(./images/Background.png);
   min-height: 11.5rem;
-  display: flex;
-  justify-content: center;
   color: #fff;
-}
-
-.profile__title {
-  display: flex;
-  align-items: center;
 }
 
 .footer {
