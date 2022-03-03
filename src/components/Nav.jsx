@@ -3,9 +3,9 @@ import React from "react";
 export default function Nav() {
   return (
     <header>
-      <nav className="hstack">
+      <nav className="my-nav hstack p-2">
         <img src="./images/logo.png" alt="" />
-        <ul className="nav">
+        <ul className="nav d-sm-none d-md-flex">
           <li className="nav-item">
             <a href="#" className="nav-link">
               Nabídky práce

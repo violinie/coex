@@ -44,7 +44,7 @@ export default function Form() {
         }
       }}
     >
-      <div className="p-5 p-sm-0">
+      <div className="p-3 p-md-5 w-100">
         <div className="d-flex justify-content-center align-items-center p-2">
           <svg className="me-3" width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -60,7 +60,7 @@ export default function Form() {
         <Input type={"tel"} name={"phone"} placeholder="Telefon *" isRequired={true} errors={validationErrors} />
         <div>* Údaje s hvězdičkou jsou povinné</div>
       </div>
-      <div className="p-md-5 p-sm-0">
+      <div className="p-3 p-md-5 w-100">
         <div className="d-flex justify-content-center align-items-center p-2">
           <svg className="me-3" width="21" height="25" viewBox="0 0 21 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -73,13 +73,12 @@ export default function Form() {
         <textarea className="w-100 my-4" placeholder="Střední škola (obor, roky studia, ...)"></textarea>
         <textarea className="w-100" placeholder="Vysoká škola (obor, roky studia, ...)"></textarea>
       </div>
-      <div className="p-5 p-sm-0">
+      <div className="p-3 p-md-5 w-100">
         <div className="d-flex justify-content-center align-items-center p-2">
           <svg className="me-3" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M23.6719 20.7656C23.8906 20.9844 24 21.25 24 21.5625C24 21.875 23.8906 22.1406 23.6719 22.3594L22.3594 23.6719C22.1406 23.8906 21.875 24 21.5625 24C21.25 24 20.9844 23.8906 20.7656 23.6719L16.0781 18.9844C15.8594 18.7656 15.75 18.5 15.75 18.1875V17.4375C14 18.8125 12 19.5 9.75 19.5C7.0625 19.5 4.76562 18.5469 2.85938 16.6406C0.953125 14.7344 0 12.4375 0 9.75C0 7.0625 0.953125 4.76562 2.85938 2.85938C4.76562 0.953125 7.0625 0 9.75 0C12.4375 0 14.7344 0.953125 16.6406 2.85938C18.5469 4.76562 19.5 7.0625 19.5 9.75C19.5 12 18.8125 14 17.4375 15.75H18.1875C18.5 15.75 18.7656 15.8594 18.9844 16.0781L23.6719 20.7656ZM4.96875 14.5312C6.28125 15.8438 7.875 16.5 9.75 16.5C11.625 16.5 13.2188 15.8438 14.5312 14.5312C15.8438 13.2188 16.5 11.625 16.5 9.75C16.5 8.53125 16.1875 7.40625 15.5625 6.375C14.9688 5.3125 14.1562 4.48438 13.125 3.89062C12.0938 3.29688 10.9688 3 9.75 3C7.875 3 6.28125 3.65625 4.96875 4.96875C3.65625 6.28125 3 7.875 3 9.75C3 11.625 3.65625 13.2188 4.96875 14.5312ZM11.0156 9.32812C11.4531 9.48438 11.8125 9.75 12.0938 10.125C12.375 10.5 12.5156 10.9219 12.5156 11.3906C12.5156 11.9531 12.3125 12.4375 11.9062 12.8438C11.5312 13.25 11.0625 13.4688 10.5 13.5V14.25C10.5 14.5 10.375 14.625 10.125 14.625H9.375C9.125 14.625 9 14.5 9 14.25V13.5C8.46875 13.4688 7.98438 13.2812 7.54688 12.9375C7.29688 12.7812 7.28125 12.5938 7.5 12.375L8.0625 11.8594C8.1875 11.7344 8.34375 11.7188 8.53125 11.8125C8.71875 11.9375 8.92188 12 9.14062 12H10.4531C10.6094 12 10.7344 11.9375 10.8281 11.8125C10.9531 11.6875 11.0156 11.5469 11.0156 11.3906C11.0156 11.0781 10.875 10.875 10.5938 10.7812L8.48438 10.1719C8.04688 10.0156 7.6875 9.75 7.40625 9.375C7.125 9 6.98438 8.57812 6.98438 8.10938C6.98438 7.73438 7.07812 7.39062 7.26562 7.07812C7.45312 6.76562 7.6875 6.51562 7.96875 6.32812C8.28125 6.10938 8.625 6 9 6V5.25C9 5 9.125 4.875 9.375 4.875H10.125C10.375 4.875 10.5 5 10.5 5.25V6C11.0312 6.03125 11.5156 6.21875 11.9531 6.5625C12.2031 6.71875 12.2188 6.90625 12 7.125L11.4375 7.64062C11.3125 7.76562 11.1562 7.78125 10.9688 7.6875C10.7812 7.5625 10.5781 7.5 10.3594 7.5H9.04688C8.89062 7.5 8.75 7.5625 8.625 7.6875C8.53125 7.8125 8.48438 7.95312 8.48438 8.10938C8.48438 8.42188 8.625 8.625 8.90625 8.71875L11.0156 9.32812Z"
               fill="#0D1321"
-              fill-opacity="0.5"
             />
           </svg>
           <h2 className="m-0">Aktivně hledám práci</h2>
@@ -95,7 +94,7 @@ export default function Form() {
           <option value="ostrava">Ostrava</option>
           <option value="liberec">Liberec</option>
         </select>
-        <div className="d-flex justify-content-between mt-5">
+        <div className="d-flex justify-content-between my-5">
           <button type="reset" className="btn btn--reset py-3 px-5">
             Zrušit
           </button>

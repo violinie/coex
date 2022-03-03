@@ -42,3 +42,18 @@
   padding-top: 0.5rem;
   font-weight: bold;
 }
+
+.btn {
+  border-radius: 5px;
+
+  &--submit {
+    background-color: var(--main-color);
+    font-weight: 700;
+    border: 1px solid var(--main-color);
+  }
+
+  &--reset {
+    color: var(--grey-inputs);
+    border: 1px solid var(--grey-inputs);
+  }
+}

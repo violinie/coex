@@ -25,6 +25,15 @@ textarea {
 .container {
   margin: 0 auto;
   width: 39rem;
+  @media (max-width: 767.98px) {
+    width: 100%;
+  }
+}
+
+.my-nav {
+  width: 100%;
+  background: #fff;
+  z-index: 10;
 }
 
 .nav-link {
@@ -47,21 +56,6 @@ textarea {
 .profile__title {
   display: flex;
   align-items: center;
-}
-
-.btn {
-  border-radius: 5px;
-
-  &--submit {
-    background-color: var(--main-color);
-    font-weight: 700;
-    border: 1px solid var(--main-color);
-  }
-
-  &--reset {
-    color: var(--grey-inputs);
-    border: 1px solid var(--grey-inputs);
-  }
 }
 
 .footer {
